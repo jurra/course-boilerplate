@@ -43,21 +43,21 @@ function bdModule(path){
     });
     
     //create sidebar array from dirs and files
-    const sidebarArray = ["/"].concat(dirs.map((dir) => {
+    const sidebarArray = dirs.map((dir) => {
         return {
-            title: dir,
-            collapsable: false,
-            children: fs.readdirSync(path + "/" + dir).map((childDir) => {
-                return "/" + dir + "/" + childDir
+            [`/${dir}/`]: fs.readdirSync(path + "/" + dir).map((childDir) => {
+                return childDir
             })
         }
-    })).concat(files.map((file) => {
+    }).concat(files.map((file) => {
         return file;
     })).sort((a, b) => {
         let aName = typeof a === "string" ? a : a.title;
         let bName = typeof b === "string" ? b : b.title;
         return aName > bName ? 1 : -1;
     });
+
+    sidebarArray['/'] = [];
     
     return sidebarArray;
 }
