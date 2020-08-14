@@ -22,11 +22,13 @@
 const fs = require('fs');
 const path = require('path');
 
+
+
 /**
  * 
  * @param {*} path of the module to get info from
  */
-module.exports = function bdModule(path) {
+function bdModule(path) {
   // get directory
   const dirs = fs.readdirSync(path).filter((f) => {
     //ignore directory start with .
@@ -54,39 +56,33 @@ module.exports = function bdModule(path) {
 
   obj['/']=[''];
 
-
-  //create sidebar array from dirs and files
-  const sidebarArray = dirs.map((dir) => {
-    return {
-      [`/${dir}/`]: fs.readdirSync(path + "/" + dir).map((childDir) => {
-        return childDir
-      })
-    }
-  }).concat(files.map((file) => {
-    return file;
-  })).sort((a, b) => {
-    let aName = typeof a === "string" ? a : a.title;
-    let bName = typeof b === "string" ? b : b.title;
-    return aName > bName ? 1 : -1;
-  });
-
-  sidebarArray['/'] = [];
   // console.log(obj);
   return obj;
 }
-// Build sidebar Groups
-function bdSibarGp(path) {
-  // Base path
-  // for each for each folder in docs
-  // Pass
+
+
+
+/**
+ * EDGE CASES:
+ * What happens when two blocks have the same exact object names
+ */
+
+let result = bdModule('.docs/Bloque');
+let result2 = bdModule('.docs/Segundo_Bloque');
+
+// console.log(result);
+// console.log(result2);
+
+/**
+ * For each content block, extract modules
+ */
+
+let result3 = {
+    ...bdModule('.docs/Bloque'),
+    ...bdModule('.docs/Segundo_Bloque')
 }
 
-// let sidebarConfig = this.bdModule('site/docs/');
-// console.log(sidebarConfig);
-// module.exports = sidebarConfig;
-
-
-
+console.log(result3)
 
 
 
