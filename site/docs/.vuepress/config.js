@@ -1,5 +1,5 @@
 const { description } = require('../../package')
-const sidebarConfig = require('../../../main');
+const sidebarConfig = require('../../../lib/main');
 
 module.exports = {
   /**
