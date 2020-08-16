@@ -3,7 +3,7 @@ backend:
   repo: jurra/course-boilerplate
   branch: master
 media_folder: ".vuepress/public/media"
-public_folder: "./"
+public_folder: "./site/docs/"
 publish_mode: editorial_workflow
 display_url: laughing-lalande-6c205e.netlify.app
 collections:
