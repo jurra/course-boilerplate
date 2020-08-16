@@ -2,13 +2,13 @@ backend:
   name: github
   repo: jurra/course-boilerplate
   branch: master
-media_folder: ".vuepress/public/media"
-public_folder: "/site/docs/"
+media_folder: "site/docs/.vuepress/public/media"
+public_folder: "site/docs/.vuepress/public/uploads"
 publish_mode: editorial_workflow
 display_url: laughing-lalande-6c205e.netlify.app
 collections:
   - name: "netlify" # Used in routes, e.g., /admin/collections/blog
-    label: "Doc" # Used in the UI
+    label: "modulo" # Used in the UI
     folder: "site/docs/netlify" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
