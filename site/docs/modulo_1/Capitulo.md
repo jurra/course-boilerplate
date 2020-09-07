@@ -1,24 +1,11 @@
 # Otto DIY
 
-**ðŸ“„ documentation:âœ”ï¸100%     level: â­ï¸â˜†â˜†â˜†â˜†     â±ï¸ 1 hour     âœï¸version: 10**     [**ðŸ’²buy**](https://www.ottodiy.com/store#!/Otto-DIY-builder-kit/p/135022769/category=0)
-
-â€‹
-
-[**ðŸ”§instruction manual**](https://wikifactory.com/+OttoDIY/otto-diy/files/Instruction%20manual)    [**ðŸ’»code with blockly**](https://www.ottodiy.com/#blockly)   â™¾ï¸[arduino codes](https://wikifactory.com/+OttoDIY/otto-diy/files/Code)  [**ðŸ§Š3D files**](https://wikifactory.com/+OttoDIY/otto-diy/files/3Dprint)   [**ðŸŽ¨papercraft** ](https://wikifactory.com/+OttoDIY/otto-diy/files/Papercraft)    [**ðŸ“¥download**](https://wikifactory.com/+OttoDIY/otto-diy/files)
-
-â€‹
 
 **Background information:**
 
-â€‹
-
 Otto is truly Opensource; it means the hardware is easily discerned so that others can make it, is also Arduino compatible, 3D printable and customizable, the perfect opportunity to build and have your very first robot, learn robotics and have fun, you will learn the logical connection between code and action, and by assembling it, you will understand how its components and electronics work.
 
-â€‹
-
 visit www.ottodiy.com for more detailed info.
-
-â€‹
 
 ### **Build Your Own Robot**[](https://docs.google.com/presentation/d/1SrlUREWKDYUIi2Riy9XX7KEzB7MnS0AgW7JPXjC0_Hc/edit?usp=sharing)
 

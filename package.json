@@ -1,0 +1,16 @@
+{
+  "name": "contentsMetadata",
+  "version": "0.0.1",
+  "description": "A format to extract metadata about contents and child contents",
+  "main": "index.js",
+  "repository": "https://github.com/jurra/learn.oh.dev.git",
+  "author": "Jose Carlos Urra <jose.urra86@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/preset-env": "^7.11.5",
+    "babel-core": "^6.26.3",
+    "babel-jest": "^26.3.0",
+    "babel-preset-env": "^1.7.0",
+    "jest": "^26.4.2"
+  }
+}
