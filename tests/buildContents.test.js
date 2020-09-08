@@ -1,10 +1,15 @@
-import { readFileSync, readFile, writeFile } from "fs";
-import contents from "../lib/buildContents"
+const fs = require('fs');
+const path = require('path');
+import walkDir from "../lib/buildContents"
 // Check that is documentation
+
+const dirPath = path.join(__dirname, "../site/docs");  
+
+
 it('Checks if it is a docs or not', () => {
-    // Implies converting from yaml to json
-    // Convert into a javascript
-    contents
-    
+    walkDir(dirPath, function(filePath) {
+        const fileContents = fs.readFileSync(filePath, 'utf8');
+        console.log(filePath, fileContents);
+      });
 })
 
