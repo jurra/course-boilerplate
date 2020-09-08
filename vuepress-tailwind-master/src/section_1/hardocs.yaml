@@ -1,0 +1,15 @@
+title: A name for a section
+level: 1
+short_description: > 
+  Elit cillum laboris eiusmod officia anim exercitation ad ea et adipisicing duis magna ad. Nisi eiusmod proident dolor ad fugiat consequat quis pariatur adipisicing laborum minim in incididunt amet. Proident eu nulla amet pariatur exercitation est incididunt est. Labore sunt voluptate do est. In cupidatat mollit quis officia proident aute voluptate deserunt minim anim adipisicing. Tempor enim do ad nisi minim et qui quis laborum velit ea enim.
+type: section
+public: true
+announce: true
+keywords: 
+  - A key word or phrase
+  - Another one
+authors:
+  - name: Jose Carlos Urra
+    git_account: jurra
+
+  - name: 
