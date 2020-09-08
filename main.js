@@ -1,4 +1,16 @@
-import {walkDir} from './lib/contentsBuilder';
+const fs = require('fs');
+const path = require('path');
+import {contents} from "./lib/models/contentsBuilder"
+const dirPath = path.join(__dirname, "./site/docs");
  
-console.log('Hello Node.js project.');
+/**
+ * Preconditions:
+ * 
+ * Exceptions:
+ * For this version User doesnt provide a level name
+ * 
+ */
+
+ console.log(contents)
  
+
