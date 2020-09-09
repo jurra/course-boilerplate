@@ -1,3 +1,3 @@
 module.exports =  {
-    base: "../../vuepress-tailwind-master/src/"
+    base: "../../site/src/"
 }
