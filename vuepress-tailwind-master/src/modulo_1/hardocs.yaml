@@ -1,6 +1,6 @@
-type: section
-title: Hey Jose
-description: A module from jose
+type: module
+title: Demostración
+description: Aqui iria un summary del modulo
 isPublic: true
 isDraft: false
 level: 2
