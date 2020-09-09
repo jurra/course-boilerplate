@@ -2,7 +2,7 @@
   "name": "contentsMetadata",
   "version": "0.0.1",
   "description": "A format to extract metadata about contents and child contents",
-  "main": "index.js",
+  "main": "main.js",
   "repository": "https://github.com/jurra/learn.oh.dev.git",
   "author": "Jose Carlos Urra <jose.urra86@gmail.com>",
   "scripts": {

@@ -2,7 +2,7 @@
   "name": "vuepress-tailwind",
   "version": "0.1.0",
   "description": "vuepress tailwind css",
-  "main": "index.js",
+  "main": "./vuepress/config.js",
   "author": "David Couronné",
   "license": "MIT",
   "scripts": {
@@ -10,11 +10,14 @@
     "build": "vuepress build src"
   },
   "dependencies": {
-    "moment": "^2.24.0",
-    "vuepress": "^1.3.0",
+    "@babel/core": "^7.11.6",
+    "@babel/node": "^7.10.5",
+    "@babel/preset-env": "^7.11.5",
     "@vuepress/plugin-google-analytics": "^1.3.0",
     "@vuepress/plugin-pwa": "^1.3.0",
+    "moment": "^2.24.0",
     "tailwindcss": "^1.2.0",
+    "vuepress": "^1.3.0",
     "vuepress-plugin-reading-time": "^0.1.1"
   }
 }

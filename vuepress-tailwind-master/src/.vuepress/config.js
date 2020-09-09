@@ -1,6 +1,4 @@
-
-const { description } = require('../../package')
-const sidebar = require('../../../lib/adapters/main');
+const sidebar = require('../../../lib/adapters/buildModulesSidebar');
 // import { buildSidebar } from "../../../lib/adapters/main"
 
 module.exports = {

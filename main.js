@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
-import {contents} from "./lib/models/contentsBuilder"
-const dirPath = path.join(__dirname, "./site/docs");
+import {sidebarModules} from "./lib/adapters/buildModulesSidebar"
+const dirPath = path.join(__dirname, "/vuepress-tailwind-master/src");
  
 /**
  * Preconditions:
@@ -11,6 +11,6 @@ const dirPath = path.join(__dirname, "./site/docs");
  * 
  */
 
- console.log(contents)
+//  console.log(sidebarModules)
  
 
