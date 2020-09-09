@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "A format to extract metadata about contents and child contents",
   "main": "main.js",
+  "type":"module",
   "repository": "https://github.com/jurra/learn.oh.dev.git",
   "author": "Jose Carlos Urra <jose.urra86@gmail.com>",
   "scripts": {

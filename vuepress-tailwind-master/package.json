@@ -2,6 +2,7 @@
   "name": "vuepress-tailwind",
   "version": "0.1.0",
   "description": "vuepress tailwind css",
+  "type":"module",
   "main": "./vuepress/config.js",
   "author": "David Couronné",
   "license": "MIT",

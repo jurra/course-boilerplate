@@ -1,4 +1,4 @@
-const sidebar = require('../../../lib/adapters/buildModulesSidebar');
+const { modules } = require('../../../lib/adapters/buildModulesSidebar');
 // import { buildSidebar } from "../../../lib/adapters/main"
 
 module.exports = {
@@ -27,7 +27,7 @@ module.exports = {
       { text: 'Guide', link: '/content/' },
       { text: 'Blog', link: '/blog/' },
     ],
-    sidebar: sidebar.build(`${__dirname}/../`)
+    sidebar: modules
   },
   plugins: [
     [
