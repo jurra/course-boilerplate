@@ -2,16 +2,20 @@
   <main class="home" aria-labelledby="main-title">
     <!-- <Content class="theme-default-content custom"/> -->
     <!-- <p>{{items}}</p> -->
-    <div v-for="i in items">
+    <div class="grid grid-flow-col grid-cols-2 grid-rows-2 gap-3 py-4">
+    <div v-for="i in items" class="">
       <!-- <div class="text-center"v-if="i.level == 1">
         <h1>{{i.title}}</h1>
         <h3>{{i.description}}</h3>
-      </div> -->
-      <div class="p-4 border border-primary rounded-lg my-4" v-if="i.level == 2 && i.title">
-        <h2>{{i.title}}</h2>
+      </div>-->
+      <div class="p-4 border-primary rounded-lg w-full" v-if="i.level == 2 && i.title">
+        <router-link :to="i.relativePath">
+          <h2 class="border-0">{{i.title}}</h2>
+        </router-link>
         <p>{{i.description}}</p>
-        <router-link :to="i.relativePath">go to the module</router-link>
       </div>
+      <div v-else></div>
+    </div>
     </div>
   </main>
 </template>
