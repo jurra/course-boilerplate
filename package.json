@@ -8,6 +8,7 @@
   "author": "Jose Carlos Urra <jose.urra86@gmail.com>",
   "scripts": {
     "start": "nodemon --exec babel-node main.js",
+    "babel": "nodemon --exec babel-node",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "license": "MIT",
