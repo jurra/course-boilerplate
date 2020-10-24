@@ -9,7 +9,8 @@
   "scripts": {
     "start": "nodemon --exec babel-node main.js",
     "babel": "nodemon --exec babel-node",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "cd site && yarn build"
   },
   "license": "MIT",
   "devDependencies": {
