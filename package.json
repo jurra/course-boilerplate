@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "A format to extract metadata about contents and child contents",
   "main": "main.js",
-  "type":"module",
+  "type": "module",
   "repository": "https://github.com/jurra/learn.oh.dev.git",
   "author": "Jose Carlos Urra <jose.urra86@gmail.com>",
   "scripts": {
@@ -21,6 +21,7 @@
     "nodemon": "^2.0.4"
   },
   "dependencies": {
+    "ajv": "^7.0.0-beta.1",
     "directory-tree": "^2.2.4",
     "yamljs": "^0.3.0"
   }
