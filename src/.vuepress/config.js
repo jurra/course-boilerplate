@@ -1,5 +1,5 @@
 const path = require('path')
-const { buildContents, buildSidebar } = require('content-mapper');
+const { buildContents, buildSidebar } = require('metacon')
 
 let dirPath = path.join(__dirname, '../')
 let contents = buildContents(dirPath, __dirname)
