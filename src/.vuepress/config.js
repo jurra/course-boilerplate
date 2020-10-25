@@ -1,8 +1,9 @@
+const fs = require('fs')
 const path = require('path')
 const { buildContents, buildSidebar } = require('metacon')
 
-let dirPath = path.join(__dirname, '../')
-let contents = buildContents(dirPath, __dirname)
+let contents = require('./contents.data.json')
+contents = contents.contents
 console.log(contents)
 let modules = buildSidebar(contents)
 console.log(modules)
