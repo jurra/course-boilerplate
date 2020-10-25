@@ -1,5 +1,12 @@
-const { modules } = require('../../../lib/adapters/buildModulesSidebar');
-// import { buildSidebar } from "../../../lib/adapters/main"
+const path = require('path')
+const { buildContents, buildSidebar } = require('content-mapper');
+
+let dirPath = path.join(__dirname, '../')
+let contents = buildContents(dirPath, __dirname)
+console.log(contents)
+let modules = buildSidebar(contents)
+console.log(modules)
+
 
 module.exports = {
   title: 'Hello VuePress',

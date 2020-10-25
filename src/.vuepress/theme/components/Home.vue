@@ -22,8 +22,7 @@
 
 <script>
 import jsonContents from "../../contents.data.json";
-// let contents = JSON.parse(jsonContents)
-// contents = JSON.parse(contents)
+
 
 export default {
   // components: { NavLink },
