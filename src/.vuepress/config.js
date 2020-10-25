@@ -5,7 +5,7 @@ const { buildContents, buildSidebar } = require('metacon')
 let contents = require('./contents.data.json')
 contents = contents.contents
 console.log(contents)
-let modules = buildSidebar(contents, '../' + __dirname)
+let modules = buildSidebar(contents, path.join( __dirname, '../'))
 console.log(modules)
 
 
