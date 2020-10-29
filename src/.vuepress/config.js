@@ -25,8 +25,8 @@ fs.readdir(dirPath, function (err, files) {
   });
 });
 
-// let modules = buildSidebar(contents, dirPath)
-// console.log(modules)
+let modules = buildSidebar(contents, dirPath)
+console.log(modules)
 
 
 
