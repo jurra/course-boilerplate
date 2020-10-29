@@ -9,9 +9,9 @@ const { buildContents, buildSidebar } = require('metacon')
 // console.log(modules)
 
 let dirPath = path.join(__dirname, '../')
-let contents = buildContents(dirPath, __dirname)
+let contents = buildContents(dirPath, path.join(process.cwd(), '/src/'))
 console.log(contents)
-let modules = buildSidebar(contents, path.join(process.cwd(), '/src/.vuepress/'))
+let modules = buildSidebar(contents, path.join(process.cwd(), '/src/'))
 console.log(modules)
 
 
