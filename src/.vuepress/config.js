@@ -12,8 +12,8 @@ let dirPath = path.join(__dirname, '../')
 let dirContents = path.join(process.cwd(), '/src/')
 let contents = buildContents(dirPath, dirContents)
 console.log(contents)
-let modules = buildSidebar(contents, dirContents)
-console.log(modules)
+// let modules = buildSidebar(contents, dirPath)
+// console.log(modules)
 
 fs.readdir(dirPath, function (err, files) {
   //handling error
