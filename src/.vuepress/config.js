@@ -9,11 +9,23 @@ const { buildContents, buildSidebar } = require('metacon')
 // console.log(modules)
 
 let dirPath = path.join(__dirname, '../')
-let contents = buildContents(dirPath, path.join(process.cwd(), '/src/'))
+let dirContents = path.join(process.cwd(), '/src/')
+let contents = buildContents(dirPath, dirContents)
 console.log(contents)
-let modules = buildSidebar(contents, path.join(process.cwd(), '/src/'))
+let modules = buildSidebar(contents, dirContents)
 console.log(modules)
 
+fs.readdir(dirContents, function (err, files) {
+  //handling error
+  if (err) {
+      return console.log('Unable to scan directory: ' + err);
+  } 
+  //listing all files using forEach
+  files.forEach(function (file) {
+      // Do whatever you want to do with the file
+      console.log(file); 
+  });
+});
 
 module.exports = {
   title: 'Hello VuePress',
