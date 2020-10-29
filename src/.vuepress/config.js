@@ -12,8 +12,6 @@ let dirPath = path.join(__dirname, '../')
 let dirContents = path.join(process.cwd(), '/src/')
 let contents = buildContents(dirPath, dirContents)
 console.log(contents)
-// let modules = buildSidebar(contents, dirPath)
-// console.log(modules)
 
 fs.readdir(dirPath, function (err, files) {
   //handling error
@@ -26,6 +24,11 @@ fs.readdir(dirPath, function (err, files) {
       console.log(file); 
   });
 });
+
+let modules = buildSidebar(contents, dirPath)
+console.log(modules)
+
+
 
 module.exports = {
   title: 'Hello VuePress',
