@@ -15,7 +15,7 @@ console.log(contents)
 let modules = buildSidebar(contents, dirContents)
 console.log(modules)
 
-fs.readdir(dirContents, function (err, files) {
+fs.readdir(dirPath, function (err, files) {
   //handling error
   if (err) {
       return console.log('Unable to scan directory: ' + err);
