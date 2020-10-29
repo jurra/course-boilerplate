@@ -53,7 +53,7 @@ module.exports = {
       { text: 'Guide', link: '/content/' },
       { text: 'Blog', link: '/blog/' },
     ],
-    sidebar: modules
+    // sidebar: modules
   },
   plugins: [
     [
